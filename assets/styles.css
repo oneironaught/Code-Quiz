@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+}
+
+.jumbotron {
+    background-color: white;
+    color: black;
+    padding: 10px;
+}
+
+.page-header {
+    text-align: center;
+}
