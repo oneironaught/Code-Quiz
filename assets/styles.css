@@ -1,13 +1,41 @@
-.container {
-    display: flex;
-}
-
 .jumbotron {
     background-color: white;
     color: black;
-    padding: 10px;
+    padding: 100px;
 }
 
 .page-header {
     text-align: center;
+}
+
+.container {
+    display: wrap;
+    position: absolute;
+    float: left;
+    width: 650px;
+    height: 450px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 50%;
+    right: inherit;
+    border: 3px solid purple;
+}
+
+P {
+    font-size: 20px;
+    text-align: center;
+    float: left;
+}
+
+#startQuiz {
+    text-align: center;
+    background-color: purple;
+    color: white;
+    margin-left: 40%;
+    padding: 10px 20px;
+}
+
+#startQuiz:hover {
+    background-color: blueviolet;
 }
