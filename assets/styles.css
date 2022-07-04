@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDGothic&family=Press+Start+2P&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Press Start 2P', cursive;
+}
+
 .jumbotron {
     background-color: white;
     color: black;
@@ -9,7 +18,7 @@
 }
 
 .container {
-    display: wrap;
+    /* display: wrap; */
     position: absolute;
     float: left;
     width: 650px;
@@ -32,10 +41,32 @@ P {
     text-align: center;
     background-color: purple;
     color: white;
-    margin-left: 40%;
+    margin-left: 35%;
+    margin-top: 60px;
     padding: 10px 20px;
 }
 
 #startQuiz:hover {
     background-color: blueviolet;
+}
+
+#startQuiz:active {
+    background-color: violet;
+}
+
+#answerChoices {
+    text-align: center;
+    font-size: large;
+    font-weight: 100;
+    font-style: normal;
+}
+
+#timer {
+    float: right;
+}
+
+li {
+    list-style: none;
+    padding: 5px 15px;
+    margin: auto;
 }
