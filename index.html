@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS and Font Awesome -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./assets/styles.css" />
     <link rel="stylesheet" href="https://kit.fontawesome.com/986e342f6d.js" crossorigin="anonymous">
@@ -16,21 +16,20 @@
     <h1 class="page-header">Code Quiz Challenge</h1>
     </header>
     <div class="container">
-    <!-- <div class="col-12 col-md-10 col-lg-12"> -->
+      <div id="quiz" class="justify-center flex-column"></div>
     <div class="row col-md-12 col-md-offset-12 col-lg-12">
     <p>
       Try to answer the following code related questions within the time limit.
       Keep in mind that incorrect answers will penalize your score/time by ten
       seconds!
     </p>
-    <button id = "startQuiz">Start Quiz</button>  
+    <a href="./questions.html" class="btn">Start Quiz</a>  
+    <a href="./scores.html" id="scores-btn" class="btn">High Scores</a>  
     </div>
     </div>
-    <div class="timer"></div>
-    <div class="questions"></div>
-    <ul id = "answerChoices"></ul>
-    <!-- My JavaScript file -->
+    <!-- My JavaScript files -->
     <script src="assets/script.js"></script>
+    <script src="assets/script2.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
