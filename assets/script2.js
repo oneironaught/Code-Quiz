@@ -1,7 +1,7 @@
 const question = document.querySelector('#questionArray');
 const choices = Array.from(document.querySelectorAll('.option-text'));
 const options = document.querySelector('#choiceArray');
-const scoreTracker = document.querySelector('#score');
+const headerScore = document.querySelector('#score');
 const progressBarFull = document.querySelector('#progressBarFull');
 
 let currentQuestion = {}
@@ -13,42 +13,30 @@ let availableQuestions = [];
 let questions = [
     { 
     question: "Commonly used data types DO NOT include:",
-    option1:"strings",
-    option2:"booleans",
-    option3:"alerts",
-    option4:"numbers",
+    choice1:"strings",
+    choice2:"booleans",
+    choice3:"alerts",
+    choice4:"numbers",
     answer: "alerts",
 },
 {
     question: "The condition in an if / else statement is enclosed within ____.",
-    option1: "quotes",
-    option2: "curly brackets",
-    option3: "parentheses",
-    option4: "parentheses",
+    choices: ["quotes", "curly brackets", "parentheses", "square brackets"],
     answer: "parentheses"
 },
 {
     question: "Arrays in Javascript can be used to store ____.",
-    option1: "numbers and strings",
-    option2: "other arrays",
-    option3: "booleans",
-    option4: "all of the above",
+    choices: ["numbers and strings", "other arrays", "booleans", "all of the above"],
     answer: "all of the above"
 },
 {
     question: "String values must be enclosed within ____ when being assigned to variables.",
-    option1: "commas",
-    option2: "curly brackets",
-    option3: "quotes",
-    option4: "parenthesis",
+    choices: ["commas", "curly brackets", "quotes", "parenthesis"],
     answer: "quotes"
 },
 {
     question: "A very useful tool for used during development and debugging for printing content to the debugger is:",
-    option1: "javaScript",
-    option2: "terminal / bash",
-    option3: "for loops",
-    option4: "console log",
+    choices: ["Javascript", "terminal / bash", "for loops", "console log"],
     answer: "console log"
 },
 
@@ -110,8 +98,3 @@ choices.forEach(choice => {
             }, 1000)    
     })
 })    
-
-incrementScore = num => {
-    score +=num
-    scoreTracker.innerText = score
-}
